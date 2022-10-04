@@ -10847,15 +10847,12 @@ html, body {
 }
 
 body {
+  color: #716558;
   font-family: "bulgattiregular";
 }
 
 body .info-text {
   font-family: "baskervillenormal" !important;
-}
-
-.page-content {
-  margin-top: 40px;
 }
 
 footer {
@@ -10879,7 +10876,7 @@ footer p {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #a51725;
+  background-color: #74967E;
   color: white;
   cursor: pointer;
   padding: 7px;
@@ -10890,17 +10887,21 @@ footer p {
 }
 
 .navbar {
-  background-color: #a51725 !important;
+  background-color: #74967E !important;
 }
 
 .btn-primary {
-  background-color: #a51725 !important;
-  border-color: #a51725 !important;
-  color: #f9df88 !important;
+  background-color: #BCCFC2 !important;
+  border-color: #BCCFC2 !important;
+  color: #6F655A !important;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
 }
 
 .btn-primary:hover {
-  background-color: #8a1520 !important;
+  background-color: #74967E !important;
+  border-color: #74967E !important;
+  color: #f9df88 !important;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -11063,6 +11064,12 @@ footer p {
   background-size: cover;
 }
 
+.hero {
+  padding-top: 40px;
+  background-image: url("../assets/opening/bg.png");
+  background-size: cover;
+}
+
 .navbar-store {
   padding-top: 15px;
 }
@@ -11113,6 +11120,43 @@ footer p {
 .page-home h5 {
   font-weight: 300;
   margin-bottom: 15px;
+}
+
+@media (max-width: 576px) {
+  .page-home .bunga-besar {
+    position: absolute;
+    top: -70px;
+    left: 40px;
+    width: 100%;
+  }
+  .page-home .main-photo {
+    margin-top: 2rem;
+    width: 320px;
+    padding-right: 35px;
+    padding-top: 70px;
+  }
+  .page-home #row-timer {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .page-home #row-timer > .col-3 {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+  .page-home #row-timer > .col-3 p {
+    font-size: 11pt;
+  }
+  .page-home .timer-box {
+    background-color: #DEE2DC;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .page-home .timer-box h5 {
+    font-size: 32pt !important;
+  }
 }
 
 .component-categories {

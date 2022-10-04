@@ -29,6 +29,7 @@ html, body {
 }
 
 body {
+  color: #716558;
   // font-family: "Great Vibes";
   font-family: "bulgattiregular";
 
@@ -41,10 +42,6 @@ body {
     // font-family: "baskervillenormal" !important;
     // font-family: "bulgattiregular" !important;
   // }
-}
-
-.page-content {
-  margin-top: 40px;
 }
 
 footer {
@@ -68,7 +65,7 @@ footer {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #a51725;
+  background-color: #74967E;
   color: white;
   cursor: pointer;
   padding: 7px;
@@ -79,17 +76,21 @@ footer {
 }
 
 .navbar {
-  background-color: #a51725 !important;
+  background-color: #74967E !important;
 }
 
 .btn-primary {
-  background-color: #a51725 !important;
-  border-color: #a51725 !important;
-  color: #f9df88 !important;
+  background-color: #BCCFC2 !important;
+  border-color: #BCCFC2 !important;
+  // color: #f9df88 !important;
+  color: #6F655A !important;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
 }
 
 .btn-primary:hover {
-  background-color: #8a1520 !important;
+  background-color: #74967E !important;
+  border-color: #74967E !important;
+  color: #f9df88 !important;
 }
 
 .btn-primary:focus,
@@ -179,6 +180,15 @@ footer {
 }
 
 .modal-fullscreen-xl .modal-body {
+  background-image: url('../assets/opening/bg.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero {
+  padding-top: 40px;
   background-image: url('../assets/opening/bg.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
