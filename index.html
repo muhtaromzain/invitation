@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Dita and Zain</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/script/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/script/slick/slick-theme.css"
+    />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Button Start and Pause Audio -->
+    <button id="audio" class="rounded-circle" title="">
+      <svg
+        id="play"
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        fill="currentColor"
+        class="bi bi-play-fill audio-button"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+        />
+      </svg>
+      <svg
+        id="pause"
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        fill="currentColor"
+        class="bi bi-pause-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"
+        />
+      </svg>
+    </button>
+
+    <!-- <audio id="myAudio" style="display: none" loop="loop" controls autoplay>
+      <source src="assets/bg.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio> -->
+
+    <!-- Navbar -->
+    <!-- <nav
+      id="test"
+      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a href="/index.html" class="navbar-brand">
+          <img src="/images/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Rewards</a></li>
+            <li class="nav-item">
+              <a href="/register.html" class="nav-link">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a href="/login.html" class="btn-success nav-link px-4 text-white"
+                >Sign In</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-dark bg-info navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom"
+    >
+      <ul class="navbar-nav nav-justified w-100">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              fill="currentColor"
+              class="bi bi-house-heart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"
+              />
+              <path
+                d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              fill="currentColor"
+              class="bi bi-person-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              fill="currentColor"
+              class="bi bi-calendar2-event-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM11.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              fill="currentColor"
+              class="bi bi-camera2"
+              viewBox="0 0 16 16"
+            >
+              <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z" />
+              <path
+                d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content page-home">
+      <!-- Hero -->
+      <section class="hero mx-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img
+                class="img-fluid rounded mx-auto mb-5 d-block"
+                src="/images/1.jpg"
+                width="300"
+                height="300"
+                alt="Initial DZ"
+              />
+              <h1 class="text-center">DZ</h1>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#modal-fullscreen-xl"
+              >
+                Show
+              </button>
+              <!-- <span id="typed2" class="info-text"></span> -->
+              <!-- <span id="guest-name"></span> -->
+              <h4 class="text-center">Dita & Zain</h4>
+              <h5 class="text-center info-text weddingDate"></h5>
+            </div>
+          </div>
+
+          <div class="row info-text">
+            <div class="col-3 bg-timer">
+              <span class="text-center">
+                <h5 id="day" class="mt-3"></h5>
+                <h5>Hari</h5>
+              </span>
+            </div>
+            <div class="col-3 bg-timer2">
+              <span class="text-center">
+                <h5 id="hour" class="mt-3"></h5>
+                <h5>Jam</h5>
+              </span>
+            </div>
+            <div class="col-3 bg-timer3">
+              <span class="text-center">
+                <h5 id="minute" class="mt-3"></h5>
+                <h5>Menit</h5>
+              </span>
+            </div>
+            <div class="col-3 bg-timer4">
+              <span class="text-center">
+                <h5 id="second" class="mt-3"></h5>
+                <h5>Detik</h5>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Detail -->
+      <section class="detail mt-5 bg">
+        <div class="container">
+          <div class="col-12">
+            <div class="text-center">
+              <h2>Assalamu'alaikum Wr. Wb.</h2>
+              <h5 class="info-text">
+                Dengan memohon Ridho & Rahmat Allah Ta’ala, izinkan kami bersatu
+                dalam sebuah ikatan suci pernikahan.
+              </h5>
+            </div>
+            <div class="text-center">
+              <img
+                class="img-fluid rounded mx-auto mb-5 d-block"
+                src="/images/1.jpg"
+                width="200"
+                height="200"
+                alt="Dita"
+              />
+              <h2>Dita Kintani, B.Arch.</h2>
+              <h5 class="info-text">Putri Dari Nozamri & Mardiani</h5>
+            </div>
+            <div class="text-center mb-4">
+              <h4 class="info-text">- dengan -</h4>
+            </div>
+            <div class="text-center">
+              <img
+                class="img-fluid rounded mx-auto mb-5 d-block"
+                src="/images/1.jpg"
+                width="200"
+                height="200"
+                alt="Zain"
+              />
+              <h2>Muhtarom Zain Muhammad Sondakh, B.Sc.</h2>
+              <h5 class="info-text">Putra Dari Guido Sondakh & Nur Jannah</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location -->
+      <section class="location mt-5">
+        <div class="container">
+          <div class="text-center">
+            <h2>Our Special Day</h2>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="text-center">
+                <h3>Akad Nikah</h3>
+              </div>
+              <div class="text-center info-text">
+                <h5 class="weddingDate"></h5>
+                <h5>Pukul 08.00 WIB</h5>
+                <h5 class="venueAddress"></h5>
+                <a
+                  href="https://www.google.com/maps/place/Balai+Prajurit+Ardhya+Loka/@-6.2598945,106.8856577,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69f32280c7c2d5:0x3d7d062570f11380!8m2!3d-6.2598998!4d106.8878464"
+                  class="btn btn-primary mb-4"
+                  target="_blank"
+                  >Lihat lokasi</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-12">
+              <div class="text-center">
+                <h3>Resepsi</h3>
+              </div>
+              <div class="text-center info-text">
+                <h5 class="weddingDate"></h5>
+                <h5>Pukul 10.00 WIB</h5>
+                <h5 class="venueAddress"></h5>
+                <a
+                  href="https://www.google.com/maps/place/Balai+Prajurit+Ardhya+Loka/@-6.2598945,106.8856577,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69f32280c7c2d5:0x3d7d062570f11380!8m2!3d-6.2598998!4d106.8878464"
+                  class="btn btn-primary mb-4"
+                  target="_blank"
+                  >Lihat lokasi</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="gallery mt-4 bg">
+        <div class="container">
+          <div class="text-center">
+            <h2>Gallery Photo</h2>
+            <p class="info-text">
+              Tidak ada yang spesial dalam cerita kami. Tapi kami sangat spesial
+              untuk satu sama lain. Dan Kami bersyukur, dipertemukan Allah
+              diwaktu terbaik, Kini kami menanti hari istimewa kami.
+            </p>
+
+            <!-- Slick -->
+            <section class="your-class">
+              <div>
+                <img src="/images/1.jpg" width="200" />
+              </div>
+              <div>
+                <img src="/images/2.jpg" width="200" />
+              </div>
+              <div>
+                <img src="/images/1.jpg" width="200" />
+              </div>
+              <div>
+                <img src="/images/2.jpg" width="200" />
+              </div>
+              <div>
+                <img src="/images/1.jpg" width="200" />
+              </div>
+              <div>
+                <img src="/images/2.jpg" width="200" />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Envelope -->
+      <section class="envelope mt-5">
+        <div class="container">
+          <div class="text-center">
+            <h2>Amplop Digital</h2>
+            <h5 class="info-text mb-3">
+              Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.
+              Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat
+              memberi kado secara cashless.
+            </h5>
+            <img
+              class="img-fluid mt-3"
+              src="/images/bca.png"
+              width="250"
+              height="250"
+            />
+            <hr />
+            <h5 class="info-text">No. Rekening</h5>
+            <h5 id="bankAccount" class="info-text"></h5>
+            <button id="bankAccountButton" class="btn btn-primary info-text">
+              Copy Text
+            </button>
+            <h5 class="info-text mt-3">A/n Hadiah</h5>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing -->
+      <section class="closing mt-5 bg">
+        <div class="container">
+          <div class="text-center">
+            <img
+              class="img-fluid rounded mx-auto mb-5 d-block"
+              src="/images/1.jpg"
+              width="300"
+              height="300"
+              alt="Both"
+            />
+            <p class="info-text">
+              Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila
+              bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas
+              kehadiran dan doa restunya, kami mengucapkan terima kasih.
+            </p>
+            <h2>Wassalamu'alaikum Wr. Wb.</h2>
+            <h5 class="info-text">Jazakumullahu Khairan</h5>
+            <h1>Dita & Zain</h1>
+          </div>
+          <!-- <audio id="audioplayer" src="assets/bg.mp3" type="audio/mpeg" loop="loop"> </audio> -->
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="pt-4 pb-2 info-text">
+                &copy;2023 Copyright Dita and Zain. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Front page envelope -->
+      <div
+        class="modal modal-fullscreen-xl"
+        id="modal-fullscreen-xl"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="d-flex align-items-center modal-content">
+            <!-- <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div> -->
+            <!-- <div class="d-flex align-items-center modal-body"> -->
+            <div class="modal-body" style="padding: 0; padding-top: 1rem !important">
+              <div class="text-center">
+                <div class="mb-3">
+                  <img
+                    class="img-fluid"
+                    src="assets/opening/dz2.png"
+                    width="50"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid"
+                    src="assets/opening/foto.png"
+                    width="250"
+                  />
+                </div>
+                <div style="margin-top: -170px">
+                  <img
+                    class="img-fluid"
+                    src="assets/opening/bunga.png"
+                    width="500"
+                  />
+                </div>
+                <div class="overlap-div" 
+                    style="
+                    height: 100%;
+                    margin-top: -70px;
+                    background-image: url('../assets/opening/bg.png');
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                    width: 100%;
+                    border-top-right-radius: 50%;
+                    border-top-left-radius: 50%;
+                    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.35);
+                    position: relative;">
+                    <!-- <h1 class="mb-5">D Z</h1> -->
+                    <h5 class="pt-5 info-text">
+                      Kepada Bapak/Ibu/Saudara/i
+                    </h5>
+                    <span id="guest-name" class="info-text"></span>                
+                    <h5 class="info-text my-5">
+                      Tanpa mengurangi rasa hormat, kami mengundang anda untuk
+                      berhadir di acara pernikahan kami.
+                    </h5>
+                    <button
+                      id="open-invitation"
+                      type="button"
+                      class="btn btn-primary info-text"
+                      data-dismiss="modal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-envelope-open"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM15 7.383l-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2Z"
+                        />
+                      </svg>
+                      Buka Undangan
+                    </button>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/script/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/script/main.js"></script>
+    <script src="/script/navbar-scroll.js"></script>
+  </body>
+</html>

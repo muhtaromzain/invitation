@@ -1,0 +1,187 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+@font-face {
+    font-family: 'baskervillenormal';
+    src: url("../assets/font/baskvl.ttf") format('truetype'),
+         url('../assets/font/baskvl-webfont.woff2') format('woff2'),
+         url('../assets/font/baskvl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bulgattiregular';
+    src: url("../assets/font/Bulgatti.ttf") format('truetype'),
+         url('../assets/font/bulgatti-webfont.woff2') format('woff2'),
+         url('../assets/font/bulgatti-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  // font-family: "Great Vibes";
+  font-family: "bulgattiregular";
+
+  .info-text {
+    // font-family: "Bellefair" !important;
+    font-family: "baskervillenormal" !important;
+  }
+
+  // .test {
+    // font-family: "baskervillenormal" !important;
+    // font-family: "bulgattiregular" !important;
+  // }
+}
+
+.page-content {
+  margin-top: 40px;
+}
+
+footer {
+  background-color: #a51725;
+  margin-top: 30px;
+
+  p {
+    color: #f9df88;
+  }
+}
+
+.form-control {
+  background-color: #f3f3f3;
+}
+
+#audio {
+  position: fixed;
+  bottom: 70px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #a51725;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.audio-button {
+  display: none;
+}
+
+.navbar {
+  background-color: #a51725 !important;
+}
+
+.btn-primary {
+  background-color: #a51725 !important;
+  border-color: #a51725 !important;
+  color: #f9df88 !important;
+}
+
+.btn-primary:hover {
+  background-color: #8a1520 !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(165, 23, 37, 0.5) !important;
+}
+
+@mixin modal-fullscreen() {
+  padding: 0 !important; // override inline padding-right added from js
+
+  .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+
+  .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .modal-body {
+    overflow-y: auto;
+    // background-color: #a51725 !important;
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-down($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .modal-fullscreen#{$infix} {
+      @include modal-fullscreen();
+    }
+  }
+}
+
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 10px 30px;
+}
+
+.slick-slide img {
+  width: 200px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.bg {
+  background-color: #a51725 !important;
+}
+
+#guest-name {
+  font-size: 1.5em;
+  font-family: "bulgattiregular" !important;
+  color: #6F655A;
+}
+
+.typed-cursor{
+    font-size: 3em;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+.modal-fullscreen-xl .modal-body {
+  background-image: url('../assets/opening/bg.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
