@@ -38,6 +38,11 @@ body {
     font-family: "baskervillenormal" !important;
   }
 
+  background-image: url('../assets/opening/bg-clear.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   // .test {
     // font-family: "baskervillenormal" !important;
     // font-family: "bulgattiregular" !important;
@@ -45,11 +50,12 @@ body {
 }
 
 footer {
-  background-color: #a51725;
-  margin-top: 30px;
+  background-color: #74967E;
+  margin-top: 0 !important;
 
   p {
-    color: #f9df88;
+    color: white;
+    // color: #f9df88;
   }
 }
 
@@ -161,10 +167,6 @@ footer {
   opacity: 1;
 }
 
-.bg {
-  background-color: #a51725 !important;
-}
-
 #guest-name {
   font-size: 1.5em;
   font-family: "bulgattiregular" !important;
@@ -187,11 +189,74 @@ footer {
   background-size: cover;
 }
 
-.hero {
+.hero, .detail, .gallery, .closing {
   padding-top: 40px;
   background-image: url('../assets/opening/bg.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
+}
+
+.closing {
+  padding-top: 40px;
+  background-image: url('../assets/opening/bg-closing.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.lable, .location {
+  padding-top: 40px;
+  background-image: url('../assets/opening/bg-clear.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#date-lable {
+  font-size: 3rem;
+  color: #798D7A;
+  letter-spacing: -2px;
+}
+
+.overlap-div {
+  margin-top: -70px;
+  background-image: url('../assets/opening/bg.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  border-top-right-radius: 999px;
+  border-top-left-radius: 999px;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.overlap-div-couple {
+  margin-top: -70px;
+  background-image: url('../assets/opening/bg.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  border-top-right-radius: 999px;
+  border-top-left-radius: 999px;
+  border-bottom-right-radius: 999px;
+  border-bottom-left-radius: 999px;
+  // border-top-right-radius: 50%;
+  // border-top-left-radius: 50%;
+  box-shadow: 0 0px 50px rgba(0, 0, 0, 0.45);
+  position: relative;
+}
+
+.pb-7 {
+  padding-bottom: 7rem !important;
 }
