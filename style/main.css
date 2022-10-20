@@ -10832,6 +10832,10 @@ html, body {
   height: 100%;
 }
 
+img {
+  pointer-events: none;
+}
+
 @font-face {
   font-family: 'baskervillenormal';
   src: url("../assets/font/baskvl.ttf") format("truetype"), url("../assets/font/baskvl-webfont.woff2") format("woff2"), url("../assets/font/baskvl-webfont.woff") format("woff");
