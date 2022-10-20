@@ -4,7 +4,7 @@
         // margin-bottom: 15px;
     }
 
-    @media (max-width: 926px) {
+    @media (max-width: 576px) {
         
         .bunga-besar {
             position: absolute;
@@ -88,6 +88,18 @@
         footer {
             display: none;
         }
+
+        .small-initial-cover {
+            width: 20vw;
+        }
+
+        .photo-cover {
+            width: 60vw;
+        }
+
+        .flower-separator-container {
+            margin-top: -170px
+        }
         
         // .bg-timer {
         //     background-color: red;
@@ -114,9 +126,142 @@
         // }
     }
 
-    // @media (max-width: 768px) {
+    @media (min-width: 768px) {
+        h5 {
+            font-size: 2rem;
+        }
 
-    // }
+        .bunga-besar {
+            position: absolute;
+            top: -80px;
+            right: -100px;
+            width: 75vw;
+        }
+
+        .main-photo {
+            margin-top: 6rem;
+            width: 60vw;
+            padding-right: 35px;
+            padding-top: 70px;
+        }
+
+        .initial-dz {
+            width: 50vw;
+        }
+
+        #row-timer {
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        #row-timer > .col-3 {
+            padding-right: 4px;
+            padding-left: 4px;
+            p {
+                font-size: 16pt;
+            }
+        }
+
+        .timer-box {
+            background-color: #DEE2DC;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+            padding-right: 10px;
+            padding-left: 10px;
+            h5 {
+                font-size: 32pt !important;
+            }
+        }
+
+        #date-lable {
+            font-size: 5rem;
+            color: #798D7A;
+            letter-spacing: -2px;
+        }
+
+        .photo-dita, .photo-zain {
+            width: 55vw;
+        }
+
+        .location, .closing {
+            padding-top: 35rem;
+            margin-top: -30rem;
+            z-index: -1;
+        }
+
+        .overlap-div {
+            margin-top: -180px;
+        }
+
+        .overlap-div-couple {
+            margin-top: -10rem;
+        }
+
+        .separator-left {
+            position: absolute;
+            left: -5rem;
+            top: 0;
+            bottom: 570px;
+            width: 35vw;
+        }
+
+        .separator-right {
+            position: absolute;
+            right: -5rem;
+            top: 0;
+            bottom: 570px;
+            width: 35vw;
+        }
+
+        .photo-slide {
+            width: 60vw;
+        }
+
+        .bunga-besar-closing {
+            position: absolute;
+            transform: rotate(90deg);
+            bottom: -80px;
+            right: -100px;
+            width: 75vw;
+        }
+
+        .initial-closing {
+            padding-bottom: 200px;
+            width: 35vw;
+        }
+
+        footer {
+            display: none;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h4 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 18pt;
+        }
+
+        #guest-name {
+            font-size: 2.5em;
+        }
+
+        .small-initial-cover {
+            width: 10vw;
+        }
+
+        .photo-cover {
+            width: 45vw;
+        }
+
+        .flower-separator-container {
+            margin-top: -20rem
+        }
+    }
 
     // @media (max-width: 992px) {
 

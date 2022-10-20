@@ -11180,7 +11180,7 @@ footer p {
   font-weight: 300;
 }
 
-@media (max-width: 926px) {
+@media (max-width: 576px) {
   .page-home .bunga-besar {
     position: absolute;
     top: -70px;
@@ -11252,6 +11252,130 @@ footer p {
   }
   .page-home footer {
     display: none;
+  }
+  .page-home .small-initial-cover {
+    width: 20vw;
+  }
+  .page-home .photo-cover {
+    width: 60vw;
+  }
+  .page-home .flower-separator-container {
+    margin-top: -170px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-home h5 {
+    font-size: 2rem;
+  }
+  .page-home .bunga-besar {
+    position: absolute;
+    top: -80px;
+    right: -100px;
+    width: 75vw;
+  }
+  .page-home .main-photo {
+    margin-top: 6rem;
+    width: 60vw;
+    padding-right: 35px;
+    padding-top: 70px;
+  }
+  .page-home .initial-dz {
+    width: 50vw;
+  }
+  .page-home #row-timer {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .page-home #row-timer > .col-3 {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+  .page-home #row-timer > .col-3 p {
+    font-size: 16pt;
+  }
+  .page-home .timer-box {
+    background-color: #DEE2DC;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .page-home .timer-box h5 {
+    font-size: 32pt !important;
+  }
+  .page-home #date-lable {
+    font-size: 5rem;
+    color: #798D7A;
+    letter-spacing: -2px;
+  }
+  .page-home .photo-dita, .page-home .photo-zain {
+    width: 55vw;
+  }
+  .page-home .location, .page-home .closing {
+    padding-top: 35rem;
+    margin-top: -30rem;
+    z-index: -1;
+  }
+  .page-home .overlap-div {
+    margin-top: -180px;
+  }
+  .page-home .overlap-div-couple {
+    margin-top: -10rem;
+  }
+  .page-home .separator-left {
+    position: absolute;
+    left: -5rem;
+    top: 0;
+    bottom: 570px;
+    width: 35vw;
+  }
+  .page-home .separator-right {
+    position: absolute;
+    right: -5rem;
+    top: 0;
+    bottom: 570px;
+    width: 35vw;
+  }
+  .page-home .photo-slide {
+    width: 60vw;
+  }
+  .page-home .bunga-besar-closing {
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: -80px;
+    right: -100px;
+    width: 75vw;
+  }
+  .page-home .initial-closing {
+    padding-bottom: 200px;
+    width: 35vw;
+  }
+  .page-home footer {
+    display: none;
+  }
+  .page-home h2 {
+    font-size: 3rem;
+  }
+  .page-home h4 {
+    font-size: 2.5rem;
+  }
+  .page-home p {
+    font-size: 18pt;
+  }
+  .page-home #guest-name {
+    font-size: 2.5em;
+  }
+  .page-home .small-initial-cover {
+    width: 10vw;
+  }
+  .page-home .photo-cover {
+    width: 45vw;
+  }
+  .page-home .flower-separator-container {
+    margin-top: -20rem;
   }
 }
 
