@@ -11057,7 +11057,7 @@ footer p {
   animation: blink 0.7s infinite;
 }
 
-.modal-fullscreen-xl .modal-body {
+.modal-fullscreen-xl, .modal-body {
   background-image: url("../assets/opening/bg.png");
   background-size: cover;
 }
@@ -11081,6 +11081,12 @@ footer p {
   background-image: url("../assets/opening/bg-clear.png");
   background-size: cover;
   overflow: hidden;
+}
+
+.location, .closing {
+  padding-top: 230px;
+  margin-top: -180px;
+  z-index: -1;
 }
 
 #date-lable {
@@ -11117,6 +11123,10 @@ footer p {
 
 .pb-7 {
   padding-bottom: 7rem !important;
+}
+
+.flower-separator {
+  width: 90vw;
 }
 
 .navbar-store {
@@ -11170,18 +11180,21 @@ footer p {
   font-weight: 300;
 }
 
-@media (max-width: 813px) {
+@media (max-width: 926px) {
   .page-home .bunga-besar {
     position: absolute;
     top: -70px;
-    left: 40px;
+    right: -40px;
     width: 100%;
   }
   .page-home .main-photo {
     margin-top: 2rem;
-    width: 320px;
+    width: 85vw;
     padding-right: 35px;
     padding-top: 70px;
+  }
+  .page-home .initial-dz {
+    width: 75vw;
   }
   .page-home #row-timer {
     margin-right: 30px;
@@ -11205,21 +11218,25 @@ footer p {
   .page-home .timer-box h5 {
     font-size: 32pt !important;
   }
+  .page-home .photo-dita, .page-home .photo-zain {
+    width: 55vw;
+  }
   .page-home .separator-left {
     position: absolute;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    right: 220px;
-    top: auto;
+    left: -35px;
+    top: 0;
     bottom: 570px;
+    width: 40vw;
   }
   .page-home .separator-right {
     position: absolute;
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-    left: 220px;
-    top: auto;
+    right: -35px;
+    top: 0;
     bottom: 570px;
+    width: 40vw;
+  }
+  .page-home .photo-slide {
+    width: 50vw;
   }
   .page-home .bunga-besar-closing {
     position: absolute;
@@ -11231,6 +11248,7 @@ footer p {
   }
   .page-home .initial-closing {
     padding-bottom: 200px;
+    width: 55vw;
   }
   .page-home footer {
     display: none;

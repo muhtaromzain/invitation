@@ -181,7 +181,7 @@ footer {
     animation: blink 0.7s infinite;
 }
 
-.modal-fullscreen-xl .modal-body {
+.modal-fullscreen-xl, .modal-body {
   background-image: url('../assets/opening/bg.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -217,6 +217,12 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
+}
+
+.location, .closing {
+  padding-top: 230px;
+  margin-top: -180px;
+  z-index: -1;
 }
 
 #date-lable {
@@ -259,4 +265,8 @@ footer {
 
 .pb-7 {
   padding-bottom: 7rem !important;
+}
+
+.flower-separator {
+  width: 90vw;
 }

@@ -4,22 +4,24 @@
         // margin-bottom: 15px;
     }
 
-    @media (max-width: 813px) {
+    @media (max-width: 926px) {
         
         .bunga-besar {
             position: absolute;
             top: -70px;
-            left: 40px;
-            // right: 0;
-            // top: 0;
+            right: -40px;
             width: 100%;
         }
 
         .main-photo {
             margin-top: 2rem;
-            width: 320px;
+            width: 85vw;
             padding-right: 35px;
             padding-top: 70px;
+        }
+
+        .initial-dz {
+            width: 75vw;
         }
 
         #row-timer {
@@ -46,20 +48,28 @@
             }
         }
 
+        .photo-dita, .photo-zain {
+            width: 55vw;
+        }
+
         .separator-left {
             position: absolute;
-            transform: rotate(90deg);
-            right: 220px;
-            top: auto;
+            left: -35px;
+            top: 0;
             bottom: 570px;
+            width: 40vw;
         }
 
         .separator-right {
             position: absolute;
-            transform: rotate(270deg);
-            left: 220px;
-            top: auto;
+            right: -35px;
+            top: 0;
             bottom: 570px;
+            width: 40vw;
+        }
+
+        .photo-slide {
+            width: 50vw;
         }
 
         .bunga-besar-closing {
@@ -72,6 +82,7 @@
 
         .initial-closing {
             padding-bottom: 200px;
+            width: 55vw;
         }
 
         footer {
