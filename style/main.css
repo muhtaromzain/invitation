@@ -10912,8 +10912,8 @@ footer p {
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(165, 23, 37, 0.5) !important;
-          box-shadow: 0 0 0 0.2rem rgba(165, 23, 37, 0.5) !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(166, 150, 126, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(166, 150, 126, 0.5) !important;
 }
 
 @media (max-width: 575.98px) {
@@ -11091,7 +11091,10 @@ footer p {
 .location, .closing {
   padding-top: 230px;
   margin-top: -180px;
-  z-index: -1;
+}
+
+.detail, .gallery {
+  z-index: 1;
 }
 
 #date-lable {
@@ -11321,7 +11324,6 @@ footer p {
   .page-home .location, .page-home .closing {
     padding-top: 35rem;
     margin-top: -30rem;
-    z-index: -1;
   }
   .page-home .overlap-div {
     margin-top: -180px;
@@ -11409,12 +11411,6 @@ footer p {
   .page-home .location, .page-home .closing {
     padding-top: 35rem;
     margin-top: -30rem;
-    z-index: -1;
-  }
-  .page-home .location, .page-home .closing {
-    padding-top: 35rem;
-    margin-top: -30rem;
-    z-index: -1;
   }
   .page-home .flower-separator {
     width: 50vw;

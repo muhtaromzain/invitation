@@ -106,7 +106,7 @@ footer {
 
 .btn-primary:focus,
 .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(165, 23, 37, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(166, 150, 126, 0.5) !important;
 }
 
 @mixin modal-fullscreen() {
@@ -227,7 +227,10 @@ footer {
 .location, .closing {
   padding-top: 230px;
   margin-top: -180px;
-  z-index: -1;
+}
+
+.detail, .gallery {
+  z-index: 1;
 }
 
 #date-lable {
