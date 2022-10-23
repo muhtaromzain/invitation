@@ -84,7 +84,7 @@ $(function () {
 
   // guest name
   var guestName = window.location.href;
-  guestName = guestName.split("?=")[1];
+  guestName = guestName.split("?to=")[1];
 
   if (guestName) {
     // alternative
