@@ -11248,8 +11248,6 @@ footer p {
   }
   .page-home .bunga-besar-closing {
     position: absolute;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
     right: -50px;
     bottom: -30px;
     width: 100%;
@@ -11350,8 +11348,6 @@ footer p {
   }
   .page-home .bunga-besar-closing {
     position: absolute;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
     bottom: -80px;
     right: -100px;
     width: 75vw;
@@ -11434,8 +11430,6 @@ footer p {
   }
   .page-home .bunga-besar-closing {
     position: absolute;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
     bottom: -80px;
     right: -100px;
     width: 50vw;
