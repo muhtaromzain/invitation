@@ -87,6 +87,7 @@ footer {
 
 .navbar {
   background-color: #74967E !important;
+  display: none;
 }
 
 .btn-primary {
@@ -185,7 +186,7 @@ footer {
     animation: blink 0.7s infinite;
 }
 
-.modal-fullscreen-xl, .modal-body {
+.modal-fullscreen-xl, .modal-content {
   background-image: url('../assets/opening/bg.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;

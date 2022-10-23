@@ -10894,6 +10894,7 @@ footer p {
 
 .navbar {
   background-color: #74967E !important;
+  display: none;
 }
 
 .btn-primary {
@@ -11061,7 +11062,7 @@ footer p {
   animation: blink 0.7s infinite;
 }
 
-.modal-fullscreen-xl, .modal-body {
+.modal-fullscreen-xl, .modal-content {
   background-image: url("../assets/opening/bg.png");
   background-size: cover;
 }
@@ -11380,6 +11381,78 @@ footer p {
   }
   .page-home .flower-separator-container {
     margin-top: -20rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-home h5 {
+    font-size: 1.5rem;
+  }
+  .page-home .bunga-besar {
+    position: absolute;
+    top: -80px;
+    right: -150px;
+    width: 50vw;
+  }
+  .page-home .main-photo {
+    margin-top: 3rem;
+    width: 30vw;
+    padding-right: 35px;
+    padding-top: 70px;
+  }
+  .page-home .initial-dz {
+    width: 30vw;
+  }
+  .page-home .photo-dita, .page-home .photo-zain {
+    width: 30vw;
+  }
+  .page-home .location, .page-home .closing {
+    padding-top: 35rem;
+    margin-top: -30rem;
+    z-index: -1;
+  }
+  .page-home .location, .page-home .closing {
+    padding-top: 35rem;
+    margin-top: -30rem;
+    z-index: -1;
+  }
+  .page-home .flower-separator {
+    width: 50vw;
+  }
+  .page-home .separator-left {
+    position: absolute;
+    left: -5rem;
+    top: 0;
+    bottom: 570px;
+    width: 25vw;
+  }
+  .page-home .separator-right {
+    position: absolute;
+    right: -5rem;
+    top: 0;
+    bottom: 570px;
+    width: 25vw;
+  }
+  .page-home .photo-slide {
+    width: 25vw;
+  }
+  .page-home .bunga-besar-closing {
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: -80px;
+    right: -100px;
+    width: 50vw;
+  }
+  .page-home .initial-closing {
+    padding-bottom: 200px;
+    width: 30vw;
+  }
+  .page-home .photo-cover {
+    width: 25vw;
+  }
+  .page-home .overlap-div {
+    margin-top: -100px;
   }
 }
 

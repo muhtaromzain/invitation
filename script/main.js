@@ -97,7 +97,7 @@ $(function () {
     // guestName = "Kepada " + guestName;
     guestName = guestName;
   } else {
-    guestName = "Kepada Bapak/Ibu/Saudara/i";
+    guestName = "Di Tempat";
   }
 
   // $('#guest-name').html(guestName);
