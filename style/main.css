@@ -4,7 +4,6 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Great+Vibes&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10844,6 +10843,13 @@ img {
 }
 
 @font-face {
+  font-family: 'dancingscriptregular';
+  src: url("../assets/font/DancingScript-Regular.ttf") format("truetype"), url("../assets/font/DancingScript-Regular-webfont.woff2") format("woff2"), url("../assets/font/DancingScript-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'bulgattiregular';
   src: url("../assets/font/Bulgatti.ttf") format("truetype"), url("../assets/font/bulgatti-webfont.woff2") format("woff2"), url("../assets/font/bulgatti-webfont.woff") format("woff");
   font-weight: normal;
@@ -10852,13 +10858,65 @@ img {
 
 body {
   color: #716558;
-  font-family: "bulgattiregular";
-  background-image: url("../assets/opening/bg-clear.png");
+  font-family: "dancingscriptregular";
+  background-image: url("../assets/opening/bg-clear.webp");
   background-size: cover;
 }
 
 body .info-text {
   font-family: "baskervillenormal" !important;
+}
+
+.modal-fullscreen-xl, .modal-content {
+  background-image: url("../assets/opening/bg.webp");
+  background-size: cover;
+}
+
+.hero, .detail, .gallery, .closing {
+  padding-top: 40px;
+  background-image: url("../assets/opening/bg.webp");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.closing {
+  padding-top: 40px;
+  background-image: url("../assets/opening/bg-closing.webp");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.lable, .location {
+  padding-top: 40px;
+  background-image: url("../assets/opening/bg-clear.webp");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.overlap-div {
+  margin-top: -70px;
+  background-image: url("../assets/opening/bg.webp");
+  background-size: cover;
+  width: 100%;
+  border-top-right-radius: 999px;
+  border-top-left-radius: 999px;
+  -webkit-box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.overlap-div-couple {
+  margin-top: -70px;
+  background-image: url("../assets/opening/bg.webp");
+  background-size: cover;
+  width: 100%;
+  border-top-right-radius: 999px;
+  border-top-left-radius: 999px;
+  border-bottom-right-radius: 999px;
+  border-bottom-left-radius: 999px;
+  -webkit-box-shadow: 0 0px 50px rgba(0, 0, 0, 0.45);
+          box-shadow: 0 0px 50px rgba(0, 0, 0, 0.45);
+  position: relative;
 }
 
 footer {
@@ -11062,32 +11120,6 @@ footer p {
   animation: blink 0.7s infinite;
 }
 
-.modal-fullscreen-xl, .modal-content {
-  background-image: url("../assets/opening/bg.png");
-  background-size: cover;
-}
-
-.hero, .detail, .gallery, .closing {
-  padding-top: 40px;
-  background-image: url("../assets/opening/bg.png");
-  background-size: cover;
-  overflow: hidden;
-}
-
-.closing {
-  padding-top: 40px;
-  background-image: url("../assets/opening/bg-closing.png");
-  background-size: cover;
-  overflow: hidden;
-}
-
-.lable, .location {
-  padding-top: 40px;
-  background-image: url("../assets/opening/bg-clear.png");
-  background-size: cover;
-  overflow: hidden;
-}
-
 .location, .closing {
   padding-top: 230px;
   margin-top: -180px;
@@ -11101,32 +11133,6 @@ footer p {
   font-size: 3rem;
   color: #798D7A;
   letter-spacing: -2px;
-}
-
-.overlap-div {
-  margin-top: -70px;
-  background-image: url("../assets/opening/bg.png");
-  background-size: cover;
-  width: 100%;
-  border-top-right-radius: 999px;
-  border-top-left-radius: 999px;
-  -webkit-box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.35);
-          box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.35);
-  position: relative;
-}
-
-.overlap-div-couple {
-  margin-top: -70px;
-  background-image: url("../assets/opening/bg.png");
-  background-size: cover;
-  width: 100%;
-  border-top-right-radius: 999px;
-  border-top-left-radius: 999px;
-  border-bottom-right-radius: 999px;
-  border-bottom-left-radius: 999px;
-  -webkit-box-shadow: 0 0px 50px rgba(0, 0, 0, 0.45);
-          box-shadow: 0 0px 50px rgba(0, 0, 0, 0.45);
-  position: relative;
 }
 
 .pb-7 {

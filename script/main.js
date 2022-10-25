@@ -1,12 +1,19 @@
 $(function () {
+  // init opening
+  $(window).on("load", function () {
+    $("#modal-fullscreen-xl").modal("show");
+    $("#modal-fullscreen-xl").addClass("fade");
+  });
+
   // init AOS
   AOS.init();
 
   // Set wedding day and date
   var weddingDate = "Sabtu, 7 Januari 2023";
-  $('.weddingDate').html(weddingDate);
-  var venueAddress = "Balai Prajurit Ardhya Loka, Halim Perdana Kusuma, Jakarta Timur";
-  $('.venueAddress').html(venueAddress);
+  $(".weddingDate").html(weddingDate);
+  var venueAddress =
+    "Balai Prajurit Ardhya Loka, Halim Perdana Kusuma, Jakarta Timur";
+  $(".venueAddress").html(venueAddress);
 
   // Set the date we're counting down to
   var countDownDate = new Date("Jan 7, 2023 10:00:00").getTime();
@@ -28,10 +35,10 @@ $(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    $('#day').html(days);
-    $('#hour').html(hours);
-    $('#minute').html(minutes);
-    $('#second').html(seconds);
+    $("#day").html(days);
+    $("#hour").html(hours);
+    $("#minute").html(minutes);
+    $("#second").html(seconds);
 
     // If the count down is over, write some text
     if (distance < 0) {
@@ -39,45 +46,28 @@ $(function () {
     }
   }, 1000);
 
-  // Set bank account
-  var bankAccount = "20232023"
-  // $('#bankAccountInput').val(bankAccount);
-  $('#bankAccount').html(bankAccount);
-
-  $('#bankAccountButton').on('click', function(e) {
-    e.preventDefault();
-    navigator.clipboard.writeText(bankAccount);
-  });
-
   // Audio setup
   var bgSoundPlay = true;
   var bgSound = document.getElementById("myAudio");
 
-  $('#audio').on('click', function(e) {
+  $("#audio").on("click", function (e) {
     e.preventDefault();
 
     if (bgSoundPlay) {
-      $('#play').removeClass('audio-button');
-      $('#pause').addClass('audio-button');
+      $("#play").removeClass("audio-button");
+      $("#pause").addClass("audio-button");
       bgSound.pause();
       bgSoundPlay = false;
     } else {
-      $('#play').addClass('audio-button');
-      $('#pause').removeClass('audio-button');
+      $("#play").addClass("audio-button");
+      $("#pause").removeClass("audio-button");
       bgSound.play();
       bgSoundPlay = true;
     }
-
-  });
-
-  // init opening
-  $(window).on("load", function () {
-    $("#modal-fullscreen-xl").modal("show");
-    $("#modal-fullscreen-xl").addClass("fade");
   });
 
   // open invitation
-  $("#open-invitation").on("click", function(e) {
+  $("#open-invitation").on("click", function (e) {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   });
@@ -108,11 +98,11 @@ $(function () {
     if (words.indexOf("_") != -1) {
       var separateWord = words.toLowerCase().split("_");
     }
-    
+
     if (words.indexOf("-") != -1) {
       var separateWord = words.toLowerCase().split("-");
     }
-    
+
     if (words.indexOf("+") != -1) {
       var separateWord = words.toLowerCase().split("+");
     }
@@ -158,9 +148,7 @@ $(function () {
 
   // typed
   var typed = new Typed("#guest-name", {
-    strings: [
-      guestName
-    ],
+    strings: [guestName],
     typeSpeed: 100,
     backSpeed: 50,
     loop: true,
