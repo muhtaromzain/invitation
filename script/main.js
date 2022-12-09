@@ -1,6 +1,9 @@
 $(function () {
   let isChrome =
     /Chrome/.test(navigator.userAgent) || /Google Inc/.test(navigator.vendor);
+  let isSafari = /safari/.test(navigator.userAgent.toLowerCase());
+  let isIphone = /iphone/.test(navigator.userAgent.toLowerCase());
+  let userAgent = navigator.userAgent.toLowerCase();
 
   // init opening
   $(window).on("load", function () {
@@ -10,6 +13,11 @@ $(function () {
     if (!isChrome) {
       document.getElementById("myAudio").autoplay = true;
     }
+    
+    if (isSafari || isIphone) {
+      document.getElementById("myAudio").autoplay = false;
+    }
+    
   });
 
   // init AOS
@@ -79,7 +87,7 @@ $(function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
-    if (isChrome) {
+    if (isChrome || isIphone || isSafari) {
       bgSound.play();
       bgSoundPlay = true;
     }
