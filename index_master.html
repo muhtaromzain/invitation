@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Wedding invitation of Dita and Zain" />
+    <meta name="keywords" content="Dita and Zain wedding" />
+    <meta name="author" content="Dita and Zain" />
+
+    <title>Dita and Zain</title>
+
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <link href="/assets/opening/dz-tab.svg" rel="icon" />
+    <link href="/script/aos/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/script/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/script/slick/slick-theme.css"
+    />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Button Start and Pause Audio -->
+    <button
+      id="audio"
+      class="rounded-circle"
+      title="buttom play"
+      aria-label="play and pause"
+    >
+      <svg
+        id="play"
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        fill="currentColor"
+        class="bi bi-play-fill audio-button"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+        />
+      </svg>
+      <svg
+        id="pause"
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        fill="currentColor"
+        class="bi bi-pause-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"
+        />
+      </svg>
+    </button>
+
+    <audio id="myAudio" style="display: none" loop="loop" controls>
+      <source src="assets/bg.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-dark bg-info navbar-expand d-sm-none d-md-none d-lg-none d-xl-none fixed-bottom"
+    >
+      <ul class="navbar-nav nav-justified w-100">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              fill="currentColor"
+              class="bi bi-house-heart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"
+              />
+              <path
+                d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              fill="currentColor"
+              class="bi bi-person-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              fill="currentColor"
+              class="bi bi-calendar2-event-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM11.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              fill="currentColor"
+              class="bi bi-camera2"
+              viewBox="0 0 16 16"
+            >
+              <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z" />
+              <path
+                d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content page-home">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img
+                class="img-fluid bunga-besar"
+                src="/assets/opening/bunga-besar.webp"
+                alt="top-flower"
+                draggable="false"
+                data-aos="fade-left"
+                data-aos-delay="100"
+              />
+              <img
+                class="img-fluid main-photo rounded mx-auto mb-5 d-block"
+                src="/assets/opening/main.webp"
+                alt="main-photo"
+                draggable="false"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
+              <!-- <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#modal-fullscreen-xl"
+              >
+                Show
+              </button> -->
+              <!-- <span id="typed2" class="info-text"></span> -->
+              <!-- <span id="guest-name"></span> -->
+              <h5
+                class="text-center info-text"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                THE START OF A WONDERFUL JOURNEY
+              </h5>
+              <!-- <h5 class="text-center info-text weddingDate"></h5> -->
+            </div>
+          </div>
+
+          <div id="row-timer" class="row info-text">
+            <div class="col-3 bg-timer" data-aos="fade-up" data-aos-delay="400">
+              <div class="text-center timer-box">
+                <h5 id="day" class="mt-3"></h5>
+              </div>
+              <span class="text-center">
+                <p>HARI</p>
+              </span>
+            </div>
+            <div
+              class="col-3 bg-timer2"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="text-center timer-box">
+                <h5 id="hour" class="mt-3"></h5>
+              </div>
+              <span class="text-center">
+                <p>JAM</p>
+              </span>
+            </div>
+            <div
+              class="col-3 bg-timer3"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="text-center timer-box">
+                <h5 id="minute" class="mt-3"></h5>
+              </div>
+              <span class="text-center">
+                <p>MENIT</p>
+              </span>
+            </div>
+            <div
+              class="col-3 bg-timer4"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <div class="text-center timer-box">
+                <h5 id="second" class="mt-3"></h5>
+              </div>
+              <span class="text-center">
+                <p>DETIK</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lable">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center">
+                <h5 class="info-text" data-aos="fade-up" data-aos-delay="100">
+                  WITH JOYOUS HEARTS, WE INVITE YOU TO ATTEND THE WEDDING OF
+                </h5>
+                <img
+                  class="img-fluid initial-dz my-4"
+                  src="/assets/opening/DZ5.webp"
+                  alt="DZ"
+                  draggable="false"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                />
+                <h1
+                  id="date-lable"
+                  class="pb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  07 &#8226; 01 &#8226; 2023
+                </h1>
+                <div>
+                  <img
+                    class="img-fluid flower-separator"
+                    src="assets/opening/bunga.webp"
+                    alt="flower"
+                    draggable="false"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Detail -->
+      <section
+        class="detail overlap-div-couple"
+        style="position: relative"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div class="container">
+          <div class="col-12">
+            <div class="text-center" style="padding-top: 5rem">
+              <h1 class="pb-5" data-aos="fade-up" data-aos-delay="200">
+                We’re Getting Married
+              </h1>
+              <h5
+                class="info-text pb-5"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                Assalamu'alaikum Wr. Wb. <br />
+                Dengan memohon Ridho & Rahmat Allah Ta’ala, izinkan kami bersatu
+                dalam sebuah ikatan suci pernikahan.
+              </h5>
+            </div>
+            <div class="text-center">
+              <img
+                class="img-fluid photo-dita rounded mx-auto mb-5 d-block"
+                src="/assets/opening/mempelai_wanita.webp"
+                alt="Dita"
+                draggable="false"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              />
+              <h2 class="pb-3" data-aos="fade-up" data-aos-delay="200">
+                Dita Kintani, B.Arch.
+              </h2>
+              <h5 class="info-text" data-aos="fade-up" data-aos-delay="300">
+                Putri pertama dari Nozamri & Mardiani
+              </h5>
+            </div>
+            <div class="text-center my-5">
+              <h4 class="info-text" data-aos="fade-up" data-aos-delay="400">
+                - dengan -
+              </h4>
+            </div>
+            <div class="text-center pb-7">
+              <img
+                class="img-fluid photo-zain rounded mx-auto mb-5 d-block"
+                src="/assets/opening/mempelai_pria.webp"
+                alt="Zain"
+                draggable="false"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              />
+              <h2 class="pb-3" data-aos="fade-up" data-aos-delay="200">
+                Muhtarom Zain Muhammad Sondakh, B.Sc. (CompSc)
+              </h2>
+              <h5 class="info-text" data-aos="fade-up" data-aos-delay="300">
+                Putra pertama dari Guido Sondakh & Nur Jannah
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location -->
+      <section class="location" style="position: relative">
+        <div class="container">
+          <div>
+            <img
+              class="img-fluid separator-left"
+              src="assets/opening/bunga-left.webp"
+              alt="flower-left"
+              draggable="false"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            />
+          </div>
+          <div>
+            <img
+              class="img-fluid separator-right"
+              src="assets/opening/bunga-right.webp"
+              alt="flower-right"
+              draggable="false"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            />
+          </div>
+          <div
+            class="text-center pt-5 pb-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h1>Our Special Day</h1>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <div
+                class="text-center mb-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h2>Akad Nikah</h2>
+              </div>
+              <div
+                class="text-center info-text"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <h5 class="weddingDate"></h5>
+                <h5>Pukul 08.00 - 10.00 WIB</h5>
+                <h5 class="venueAddress"></h5>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <div
+                class="text-center mb-4"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <h2>Resepsi</h2>
+              </div>
+              <div
+                class="text-center info-text"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <h5 class="weddingDate"></h5>
+                <h5>Pukul 11.00 - 13.00 WIB</h5>
+                <h5 class="venueAddress"></h5>
+                <a
+                  href="https://www.google.com/maps/place/Balai+Prajurit+Ardhya+Loka/@-6.2598945,106.8856577,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69f32280c7c2d5:0x3d7d062570f11380!8m2!3d-6.2598998!4d106.8878464"
+                  class="btn btn-primary my-4"
+                  target="_blank"
+                  >Lihat lokasi</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <img
+              class="img-fluid flower-separator mt-3"
+              src="assets/opening/bunga.webp"
+              alt="flower"
+              draggable="false"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section
+        class="gallery overlap-div-couple pb-5"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div class="container">
+          <div class="text-center">
+            <h3 class="pb-4" data-aos="fade-up" data-aos-delay="200">
+              Photo Gallery
+            </h3>
+            <p class="info-text pb-5" data-aos="fade-up" data-aos-delay="300">
+              Kami bersyukur dapat dipertemukan oleh Tuhan<br />
+              YME di waktu yang terbaik. Kami memohon do’a<br />
+              restu agar proses pernikahan kami pun berjalan<br />
+              lancar dan dirahmati-Nya.
+            </p>
+
+            <!-- Slick -->
+            <section class="your-class" data-aos="fade-up" data-aos-delay="400">
+              <div>
+                <img
+                  class="photo-slide"
+                  src="/assets/opening/1.webp"
+                  draggable="false"
+                  alt="photo"
+                />
+              </div>
+              <div>
+                <img
+                  class="photo-slide"
+                  src="/assets/opening/2.webp"
+                  draggable="false"
+                  alt="photo"
+                />
+              </div>
+              <div>
+                <img
+                  class="photo-slide"
+                  src="/assets/opening/3.webp"
+                  draggable="false"
+                  alt="photo"
+                />
+              </div>
+              <div>
+                <img
+                  class="photo-slide"
+                  src="/assets/opening/4.webp"
+                  draggable="false"
+                  alt="photo"
+                />
+              </div>
+              <div>
+                <img
+                  class="photo-slide"
+                  src="/assets/opening/5.webp"
+                  draggable="false"
+                  alt="photo"
+                />
+              </div>
+              <div>
+                <img
+                  class="photo-slide"
+                  src="/assets/opening/6.webp"
+                  draggable="false"
+                  alt="photo"
+                />
+              </div>
+              <div>
+                <img
+                  class="photo-slide"
+                  src="/assets/opening/7.webp"
+                  draggable="false"
+                  alt="photo"
+                />
+              </div>
+              <div>
+                <img
+                  class="photo-slide"
+                  src="/assets/opening/8.webp"
+                  draggable="false"
+                  alt="photo"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing -->
+      <section class="closing" style="position: relative">
+        <div>
+          <img
+            class="img-fluid separator-left"
+            src="assets/opening/bunga-left.webp"
+            alt="separator-left"
+            draggable="false"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-offset="0"
+          />
+        </div>
+        <div>
+          <img class="img-fluid separator-right"
+          src="assets/opening/bunga-right.webp" alt="separator-right
+          draggable="false" data-aos="fade-left" data-aos-delay="500"
+          data-aos-offset="0" />
+        </div>
+        <div class="container">
+          <div class="text-center">
+            <img
+              class="img-fluid main-photo rounded mx-auto d-block mb-2"
+              src="/assets/opening/ending.webp"
+              alt="Both"
+              draggable="false"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-offset="0"
+            />
+            <p
+              class="info-text"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-offset="0"
+            >
+              <i
+                >“Jika seseorang menikah, maka ia telah menyempurnakan separuh
+                agamanya. Karenanya, bertakwalah pada Allah pada separuh yang
+                lainnya.”</i
+              >
+              <br />
+              (HR. Al Baihaqi)
+            </p>
+            <p
+              class="info-text mt-5"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-offset="0"
+            >
+              Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+              Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu untuk
+              kami. Atas kehadirannya kami ucapkan terima kasih.
+            </p>
+            <h2
+              class="mt-5 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-offset="0"
+            >
+              Wassalamu'alaikum Wr. Wb.
+            </h2>
+            <h4
+              class="info-text mb-5"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-offset="0"
+            >
+              Jazakumullahu Khairan
+            </h4>
+            <img
+              class="img-fluid initial-closing"
+              src="/assets/opening/DZ5.webp"
+              alt="DZ"
+              draggable="false"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-offset="0"
+            />
+            <img
+              class="img-fluid bunga-besar-closing"
+              src="/assets/opening/bunga-besar-bot.webp"
+              alt="bottom-flower"
+              draggable="false"
+              data-aos="fade-left"
+              data-aos-delay="700"
+              data-aos-offset="0"
+            />
+          </div>
+          <!-- <audio id="audioplayer" src="assets/bg.mp3" type="audio/mpeg" loop="loop"> </audio> -->
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="pt-4 pb-2 info-text">
+                &copy;2023 Copyright Dita and Zain. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Front page envelope -->
+      <div
+        class="modal modal-fullscreen-xl"
+        id="modal-fullscreen-xl"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="display: block"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="d-flex align-items-center modal-content">
+            <!-- <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div> -->
+            <!-- <div class="d-flex align-items-center modal-body"> -->
+            <div
+              class="modal-body"
+              style="padding: 0; padding-top: 1rem !important"
+            >
+              <div class="text-center" style="height: 100%">
+                <div class="mb-3">
+                  <img
+                    class="img-fluid small-initial-cover"
+                    src="assets/opening/DZ5-init.webp"
+                    alt="DZ"
+                    draggable="false"
+                    data-aos="fade-down"
+                    data-aos-delay="300"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid photo-cover"
+                    src="assets/opening/opening.webp"
+                    alt="cover-photo"
+                    draggable="false"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  />
+                </div>
+                <div class="flower-separator-container">
+                  <img
+                    class="img-fluid flower-separator"
+                    src="assets/opening/bunga.webp"
+                    alt="cover-flower"
+                    draggable="false"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  />
+                </div>
+                <div
+                  class="overlap-div"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  data-aos-offset="0"
+                >
+                  <h5 class="pt-5 info-text">Kepada Bapak/Ibu/Saudara/i</h5>
+                  <span id="guest-name" class="info-text"></span>
+                  <h5 class="info-text my-4">
+                    Tanpa mengurangi rasa hormat, kami mengundang anda untuk
+                    berhadir di acara pernikahan kami.
+                  </h5>
+                  <button
+                    id="open-invitation"
+                    type="button"
+                    class="btn btn-primary info-text"
+                    data-dismiss="modal"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-envelope-open"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM15 7.383l-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2Z"
+                      />
+                    </svg>
+                    Buka Undangan
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery-3.6.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/script/slick/slick.min.js"></script>
+    <script src="/script/aos/aos.js"></script>
+    <script src="/script/typed/typed.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <script src="/script/main.js" defer></script>
+    <script src="/script/navbar-scroll.js"></script>
+  </body>
+</html>
