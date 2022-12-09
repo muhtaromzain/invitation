@@ -1,8 +1,15 @@
 $(function () {
+  let isChrome =
+    /Chrome/.test(navigator.userAgent) || /Google Inc/.test(navigator.vendor);
+
   // init opening
   $(window).on("load", function () {
     $("#modal-fullscreen-xl").modal("show");
     $("#modal-fullscreen-xl").addClass("fade");
+
+    if (!isChrome) {
+      document.getElementById("myAudio").autoplay = true;
+    }
   });
 
   // init AOS
@@ -68,8 +75,14 @@ $(function () {
 
   // open invitation
   $("#open-invitation").on("click", function (e) {
+    e.preventDefault();
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+    if (isChrome) {
+      bgSound.play();
+      bgSoundPlay = true;
+    }
   });
 
   // guest name
