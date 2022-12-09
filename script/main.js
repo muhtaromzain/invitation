@@ -3,7 +3,6 @@ $(function () {
     /Chrome/.test(navigator.userAgent) || /Google Inc/.test(navigator.vendor);
   let isSafari = /safari/.test(navigator.userAgent.toLowerCase());
   let isIphone = /iphone/.test(navigator.userAgent.toLowerCase());
-  let userAgent = navigator.userAgent.toLowerCase();
 
   // init opening
   $(window).on("load", function () {
@@ -98,20 +97,11 @@ $(function () {
   guestName = guestName.split("?to=")[1];
 
   if (guestName) {
-    // alternative
-    // guestName = guestName
-    //   .replaceAll("_", " ")
-    //   .replaceAll("-", " ")
-    //   .replaceAll("+", " ");
-
     guestName = capitalizeTheFirstLetterOfEachWord(guestName);
-    // guestName = "Kepada " + guestName;
     guestName = guestName;
   } else {
     guestName = "Di Tempat";
   }
-
-  // $('#guest-name').html(guestName);
 
   function capitalizeTheFirstLetterOfEachWord(words) {
     var separateWord = words.toLowerCase().split(" ");
@@ -144,26 +134,15 @@ $(function () {
     centerMode: true,
     adaptiveHeight: true,
     variableWidth: true,
-    // centerPadding: "60px",
     responsive: [
       {
         breakpoint: 815,
         settings: {
           arrows: false,
           centerMode: true,
-          // centerPadding: "40px",
           slidesToShow: 1,
         },
       },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     arrows: false,
-      //     centerMode: true,
-      //     centerPadding: "40px",
-      //     slidesToShow: 1,
-      //   },
-      // },
     ],
   });
 
