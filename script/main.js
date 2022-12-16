@@ -1,26 +1,39 @@
 $(function () {
+  // init AOS
+  AOS.init({
+    startEvent: "load",
+  });
+
   let isChrome =
     /Chrome/.test(navigator.userAgent) || /Google Inc/.test(navigator.vendor);
   let isSafari = /safari/.test(navigator.userAgent.toLowerCase());
   let isIphone = /iphone/.test(navigator.userAgent.toLowerCase());
 
-  // init opening
-  $(window).on("load", function () {
+  $(document).ready(function () {
+    // show modal when load
     $("#modal-fullscreen-xl").modal("show");
     $("#modal-fullscreen-xl").addClass("fade");
 
+    document.getElementsByTagName("html")[0].style.visibility = "visible";
+
+    // show modal when load by trigger click
+    // $("#open-modal").trigger("click");
+
+    console.log("document ready");
+  });
+
+  // init opening
+  $(window).on("load", function () {
+    console.log("sampai sini");
+    AOS.refresh();
     if (!isChrome) {
       document.getElementById("myAudio").autoplay = true;
     }
-    
+
     if (isSafari || isIphone) {
       document.getElementById("myAudio").autoplay = false;
     }
-    
   });
-
-  // init AOS
-  AOS.init();
 
   // Set wedding day and date
   var weddingDate = "Sabtu, 7 Januari 2023";
